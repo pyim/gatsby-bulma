@@ -1,0 +1,775 @@
+/* DOCUMENT INFORMATION
+	- Document: Formao Theme
+	- Version:  1.0.0
+	- Author:   Philippe Y.
+*/
+
+
+/* COLORS
+	- default body text  #fff    
+    - button             #f39c12
+    - button:hover       #d8890b
+    - border             #f39c12
+*/
+
+
+/* FONTS
+	- default Lato, sans serif
+  
+*/
+
+
+/* CSS DIRECTORY
+	1. =GLOBAL
+	2. =HEADER
+            = Title
+            = Button
+            = Arrow
+    3. =NOS SERVICES
+*/
+
+
+
+/*  GLOBAL
+	======================================= */ 
+
+html {
+    background-color: #fff;
+    font-family: 'Roboto', 'Arial', sans-serif;
+
+}
+
+h1 {
+    font-family: 'Lato', 'Arial', sans-serif;
+    color: #2f326a;
+    font-size: 300%;
+    letter-spacing: -1px;
+    font-weight: 300;
+    word-spacing: 2px
+    
+}
+
+h2 {
+    font-family: 'Lato', 'Arial', sans-serif;
+    font-size: 250%;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    color: #2f326a;
+    word-spacing: 5px;
+
+}
+
+
+
+
+h3 {
+    font-family: 'Lato', 'Arial', sans-serif;
+    font-size: 160%;
+    font-weight: 300;
+    color: #2f326a;
+}
+
+
+
+p {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 24px;
+    color: #6e6f80;
+}
+
+ul li {
+     font-size: 14px;
+    font-weight: 300;
+    line-height: 24px;
+    color: #6e6f80;
+}
+
+
+.font-arbre {
+    font-family: 'Coiny';
+    color: green
+}
+
+
+
+section {
+    padding: 30px 0 60px 0;
+}
+
+
+a:hover, a:visited, a:link, a:active
+{
+    text-decoration: none;
+}
+
+
+/*  HEADER
+	======================================= */ 
+
+
+header {
+      /*  100% viewport height * Le viewport est la zone de visualisation du navigateur */
+    background-size: cover;
+    background-position: center;    
+    background-image: url(../images/formao-banniere2.jpg);
+    margin-bottom: 100px;
+}
+
+.logo  {
+    color: #333;
+    font-size: 30px;
+}
+
+.home-title {
+    position: absolute;
+    top: 20%;
+}
+
+.porte {
+    margin-top: 80px;
+    text-align: center;
+}
+
+.porte img {
+  display: block;
+  margin: 0 auto;
+  width: 60%;
+}
+
+.porte h2 {
+    font-size: 200%;
+    word-spacing: 10px;
+}
+
+
+
+.home-title h1 {
+    font-size: 40px;
+    font-weight: 800;
+    line-height:60px;
+    color: #fb6830;
+    text-align: center;
+}
+
+.home-title p {
+    font-size: 20px;
+    color: rgb(41, 67, 75);
+    letter-spacing: 0.5px;
+    font-weight: 300;
+
+}
+
+.login {
+    font-size: 12px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 800;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 50px;
+    margin-left: 40px;
+     border : 2px solid #fff;
+    transition: all 0.5s; /* https://caniuse.com/#search=css%20transition */
+
+}
+
+.login:hover {
+    color: #fff;
+    background-color: #d8890b;
+    border: 2px solid #d8890b;
+}
+
+.login a {
+    text-decoration: none !important;
+}
+
+.menu ul li a {
+    color: #333;
+    text-transform: uppercase;
+}
+
+
+
+.testarbre {
+    padding: 10px 10px;
+    border-radius: 10px;
+    background-image: linear-gradient(   rgba(255,255,255,0.4),
+                                        rgba(255,255,255,0.8)
+                                    ),url(../images/arbre-modal.jpg);
+    background-size: cover;
+    background-position: center; 
+    color: green;
+    font-weight: 400;
+    box-shadow: 1px 8px 9px #c5c2c2;
+    margin-top: 40px;
+
+}
+
+.news-arbre {
+    position: absolute;
+    top: 30px;
+    right: 0px;
+    background: green;
+    color: #fff;
+    width: 130px;
+    height: auto;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.news-arbre-m {
+position: absolute;
+    top: -30px;
+    right: -10px;
+    background: green;
+    color: #fff;
+    width: 230px;
+    height: auto;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 20px;
+}
+
+
+.testarbre h2 {
+    font-size: 200%;
+    margin: 5px 0;
+    color: green;
+    font-weight: 400;
+}
+
+
+.testarbre p {
+    font-size: 20px;
+    text-align: center;
+    color: green;
+    font-weight: 400;
+}
+
+.testarbre p span {
+    font-size: 30px;
+    font-weight: 400
+}
+
+.testarbre img {
+  display: block;
+  margin: 0 auto;
+  width: 50%;
+}
+
+
+
+@media only screen and (max-width: 768px) {
+  .testarbre {
+display: none
+    }
+}
+
+
+.testarbre-mobile {
+   display: none
+}
+
+
+@media only screen and (max-width: 768px) {
+  .testarbre-mobile {
+    display: block;
+    padding: 20px 20px;
+    border-radius: 10px;
+    background-image: linear-gradient(   rgba(255,255,255,0.4),
+                                        rgba(255,255,255,0.8)
+                                    ),url(../images/arbre-modal.jpg);
+    background-size: cover;
+    background-position: center; 
+    color: green;
+    font-weight: 400;
+    margin: 10px 70px;
+
+    }
+}
+
+.testarbre-m {
+}
+
+.testarbre-m img {
+    width: 100%;
+    height: auto;
+}
+
+
+
+
+/*  Button
+	======================================= */ 
+
+.btn
+{
+    display: inline-block;
+    padding: 10px 30px;
+    text-decoration: none;
+    border-radius : 10px;
+    transition: background-color 1s, border 1s, color 1s; /* alternative all 1s */
+}
+
+
+.btn-round {
+    border-radius: 50%;
+    width: 50px;
+    height: auto;
+    border: 1px solid #eee;
+    color: #eee; /* http://www.0to255.com */
+}
+
+.btn-full
+ {
+    background-color: #f39c12; /* https://flatuicolors.com */
+    color: #fff;
+    margin-right: 15px;
+
+}
+
+
+.btn-ghost
+{
+    border: 1px solid #fff;
+    color: #fff; /* http://www.0to255.com */
+}
+
+
+.btn-full:hover, /* La pseudo classe :hover spécifie l'apparence d'un élément lors du survole de la souris.*/
+.btn-full:focus
+{
+    color: #fff;
+    background-color: #d8890b;
+    border: 1px solid #d8890b;
+}
+
+.btn-ghost:hover,
+.btn-ghost:focus {
+    color: #fff;
+    background-color: #d8890b;
+    border: 1px solid #d8890b;}
+
+
+.btn-contact {
+    color: #000;
+    border: 2px solid #000
+}
+
+
+/*  Arrow Down
+	======================================= */
+
+.arrow-down {
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    color: #eee;
+    font-size: 30px;
+    transition: color 0.2s; /* https://caniuse.com/#search=css%20transition */
+
+        
+}
+
+.arrow-down:hover,
+.arrow-down:focus {
+    color: #d8890b;
+
+}
+
+
+
+
+.test-etancheite-img {
+
+    max-width: 100%;
+    height: auto;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*  1 test = 1 arbre
+	======================================= */
+.section-test {
+        background-size: cover;
+    background-position: center;    
+      background-image: url(../images/foret.jpg);
+    color: #fff;
+   padding: 100px 0
+
+};
+
+
+
+.test img {
+    display: block;
+    margin: 0 auto;
+}
+
+.test-image {
+    margin-bottom: 80px;
+    max-width: 100%;
+    height: auto;
+}
+.test-image-1 {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+    position: absolute;
+    left: 5%;
+    top: -50%;
+}
+
+
+.test-image-2 {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+    position: absolute;
+    left: 35%;
+    top: 30%;
+    margin-bottom: 80px;
+    
+}
+
+.test h2 {
+    text-align: center;
+    color: #fff;
+    font-weight: 800;
+    margin: 0 0 10px 0
+}
+
+.test p {
+    color: #fff;
+}
+.h2-vert {
+    background-color: #66c925;
+    padding: 5px;
+    font-size: 40px;
+    font-weight: 400;
+}
+
+
+
+
+.btn-arbre
+ {
+    color: #fff;
+    margin-right: 15px;
+     border: 2px solid #fff;
+}
+
+.btn-arbre:hover {
+    color: #fff;
+}
+
+.btn-arbre-header {
+    color: green;
+    margin-right: 15px;
+    border: 2px solid green;
+        margin: 0 auto;
+    display: block;
+    width: 200px;
+
+}
+
+.btn-don
+ {
+    color: #fff;
+    margin-right: 15px;
+     background-color: #66c925;
+}
+
+.btn-don:hover {
+    color: #fff;
+}
+
+
+
+/* RT 2012 */
+.rt2012 {
+
+background: linear-gradient(to right, #c6ffdd, #fbd786, #f7797d);
+}
+
+
+
+
+
+
+
+
+
+
+/*  PORTFOLIO
+	======================================= */ 
+
+.section-portfolio {  /* https://www.heropatterns.com */
+    background-color: #ffffff;
+}
+
+
+.section-portfolio h2 {
+    
+}
+
+.portfolio-img {
+  display: block;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 300px;
+  margin-bottom: 16px;
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.3);
+
+}
+
+.portfolio-details {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  border-radius: 10px;
+  padding: 5px;
+  transition: all .8s;
+  background-color: rgba(245, 245, 245, 0.8);
+}
+
+.portfolio-details h4, .portfolio-details p {
+    color: #555;
+    font-size: 60%;
+    margin: 0;
+    transition: all .8s;
+
+}
+
+.portfolio-img:hover .portfolio-details, .portfolio-img:hover h4, .portfolio-img:hover p {
+    font-size: 100%;
+
+    color: #000;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Les étapes
+	======================================= */
+.section-etape {
+    padding-bottom: 200px;
+      height: 100%;
+  background-image: url(../images/pickup.gif) ,url(../images/ground.jpg) ,
+      url(../images/maison.png),
+      url(../images/paysage.png);
+  background-color: #fff;
+  background-repeat: no-repeat, repeat-x, repeat-x, repeat-x;
+  background-position: left 30% bottom 24px, left 0px bottom 0px, left 0px bottom 24px, left 0px bottom 0px;
+  -webkit-animation: back 15s infinite linear;
+  animation: back 15s infinite linear;
+    margin-bottom: 150px;
+}
+
+
+
+@-webkit-keyframes back {
+  0% {
+    background-position: left 30% bottom 24px, left 0px bottom 0px, left 0px bottom 24px, left 0px bottom 0px;
+  }
+  50% {
+    background-position: left 50% bottom 24px, left -816px bottom 0px, left -508px bottom 24px, left -256px bottom 0px;
+  }
+  100% {
+    background-position: left 30% bottom 24px, left -1632px bottom 0px, left -1016px bottom 24px, left -512px bottom 0px;
+  }
+}
+
+@keyframes back {
+  0% {
+    background-position: left 30% bottom 24px, left 0px bottom 0px, left 0px bottom 24px, left 0px bottom 0px;
+  }
+  50% {
+    background-position: left 50% bottom 24px, left -816px bottom 0px, left -508px bottom 24px, left -256px bottom 0px;
+  }
+  100% {
+    background-position: left 30% bottom 24px, left -1632px bottom 0px, left -1016px bottom 24px, left -512px bottom 0px;
+  }
+}
+
+.etape {
+background-color: rgba(255,255,255,0.95);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 1px 8px 9px #c5c2c240;
+    margin-bottom: 20px;
+}
+
+.etape img {
+    display: block;
+    margin: 0 auto;
+    width: 30%;
+    background-color: #f6f6f6;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+}
+
+.etape h3 {
+    text-align: center
+}
+
+
+
+
+
+/* LOGOS
+	======================================= */
+
+
+.label {
+    margin: 50px 0 10px 0;
+}
+
+
+.logo-image img  {
+    max-width: 80%;
+    height: auto
+}
+
+
+
+
+
+
+
+
+/* CONTACT
+	======================================= */
+.contact {
+    padding: 0 20px;
+    background-color: #242424;
+}
+
+
+
+.contact-content {
+    padding: 0 20px;
+
+}
+
+.contact-info {
+    padding: 0 20px;
+    text-align: center;
+}
+
+.contact-form {
+    height: auto;
+    padding: 10px 30px;
+}
+
+.contact-form h2 {
+    color: #fff;
+}
+
+
+.contact-form ul li {
+    list-style-type: none;
+    margin: 6px 0;
+    color: #fff;
+}
+
+.contact-form i {
+    font-size: 1.2em;
+}
+
+.contact-form img {
+    display: block;
+    margin: 0 auto;
+    max-width: 80%;
+    border-radius: 5px;
+}
+
+
+.contact-map {
+    height: 420px;
+    border-radius: 10px;
+    margin: 60px 0;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3); /* http://css3please.com */
+}
+
+
+.map {
+    position: relative;
+    padding-bottom: 75%;
+    height: 0;
+    overflow: hidden;
+    margin-top: 20px
+}
+
+
+@media (max-width: 767px) {
+  .map {
+   margin-top: 80px;
+  }
+}
+
+
+
+.map iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+/* FOOTER
+	======================================= */
+
+footer {
+    background-color: #242424;
+    height: 60px;
+    color: #fff;
+    text-align: center;
+}
+
+.copyright {
+    padding-top: 15px
+}
+
+
+
+@media (max-width: 767px) {
+  .navbar-toggleable-sm {
+    clear: both;
+  }
+}
